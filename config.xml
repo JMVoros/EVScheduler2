@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<database>
+		<server>localhost</server>
+		<!-- user and password are set to 'XX' and 'ZZZZZ' respectively to anonymise user -->
+		<!-- This should be the the user and password set up in MySQL Schema -->
+		<user>Jo</user>
+		<password>sjfutc</password>
+		<database>evscheduler</database>
+	</database>
+	<charging>
+		<windowstart>18:00</windowstart> <!-- Start time of the charge window -->
+		<windowend>06:00</windowend> <!-- End allowed to be < start to wrap around -->
+		<slotduration>30</slotduration> <!-- In minutes. charging start time - charging window start time (in minutes) must be a multiple of the slotduration -->
+		<rate>44.0</rate>	<!-- #kw per hour -->
+	</charging>
+</configuration>

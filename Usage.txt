@@ -1,0 +1,25 @@
+Usage
+1. Ensure MySQL Workbench 8.0 CE is installed and running.
+   Check the file, config.xml is updated with the user and password created for schema / database 
+2. Ensure the SQL files provided have been executed to install the data
+3. Open a Windows Command Prompt 
+4. At the Command Prompt, change he dir location to where the files are located and execute
+	python EVScheduler.py  --date 2023-12-02
+5. The schedule will generate 2 report files in the 'reports' sub-dir : 
+    - EV Cost and Charging Schedule Report
+    - Depot Manager's Activity Schedule Report  
+   
+   Their respective file names are in the following format 
+   - EV-Cost-and-Charging-Schedule-yyyy-mm-dd.txt   
+   - Depot-Managers-Activity-Schedule-yyyy-mm-dd.txt
+   where 'yyyy-mm-dd' is date input by the operator
+
+   These reports will also be output to the screen. 
+
+6. In the input files does not exist, the following message will b displayed:
+	 Please check. Input file, chargeData_2023-12-07.csv is not present. Will try again in 5 seconds.
+
+   The time to try again can be changed by updating the value of sleepTime 
+   which is in seconds in the file, Database.py
+
+
