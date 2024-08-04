@@ -1,0 +1,35 @@
+Charging report for 01/12/2023
+================================
+
+CPId  Start  End   Bus No  Soc at  Charge Cap  Charge      Cost
+      Time   Time  Plate   start   Required    Time (hrs)
+1     00:00  03:00 YN19LCL 25%     80%         2.95        32.50
+      03:00  06:00 LE21IDS 25%     80%         2.95        26.00
+2     00:30  03:00 UB20KSK 35%     70%         2.05        22.50
+etc:
+
+Totals:                                        27.27      267.50
+
+*** ALL BUSES SUCCESSFULLY SCHEDULED FOR CHARGING ***
+
+or
+
+*** WARNING THE FOLLOWING BUSES COULD NOT BE SCHEDULED 
+*** DUE TO A LACK OF CAPACITY:
+Bus No  Soc at  Charge Cap  Charge      
+Plate   start   Required    Time (hrs)
+YN19LCL 25%     80%         2.95        
+LE21IDS 25%     80%         2.95        
+UB20KSK 35%     70%         2.05        
+
+
+
+Depot manager's activity schedule for 01/12/2023
+================================================
+
+Time   Bus No  CPId   Activity
+       Plate
+00:00  YN19LCL 1      Connect
+00:30  UB20KSK 2      Connect
+03:00  YN19LCL 1      Disconnect
+etc
